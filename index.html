@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest Navigation Bar</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links li {
+        margin-right: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      .buttons {
+        display: flex;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      .login-button {
+        background-color: #e50914;
+      }
+
+      .sign-up-button {
+        background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Faws.amazon.com%2Fsolutions%2Fcase-studies%2Finnovators%2Fpinterest%2F&psig=AOvVaw3gdiLinpIe-lCIteWa-KJ_&ust=1726211892102000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOD918XuvIgDFQAAAAAdAAAAABAE"
+          alt="Pinterest Logo"
+        />
+        <span>Pinterest</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Today</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">Explore</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="#" class="button login-button">Log in</a>
+        <a href="#" class="button sign-up-button">Sign up</a>
+      </div>
+    </div>
+  </body>
+</html>
