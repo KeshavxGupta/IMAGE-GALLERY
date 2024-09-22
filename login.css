@@ -181,7 +181,7 @@
   }
   
   .terms a {
-    color: #ff7eb3;
+    color: #483e42;
     text-decoration: none;
   }
   
@@ -197,7 +197,7 @@
   }
   
   .signup a, .business a {
-    color: #66595f;
+    color: #e9dbe1;
     text-decoration: none;
   }
   
@@ -227,4 +227,4 @@
     100% {
       transform: scale(1);
     }
-  }
+  }  
