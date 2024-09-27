@@ -4,202 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Today</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Roboto', sans-serif;
-        background-color: #f9f9f9;
-        color: #333;
-      }
-
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-        background-color: white;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-      }
-
-      .nav {
-        display: flex;
-        align-items: center;
-      }
-
-      .logo img {
-        height: 75px;
-        width: auto;
-        margin-right: 20px;
-      }
-
-      .nav-links {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .nav-links li {
-        margin-right: 15px;
-      }
-
-      .nav-links a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        transition: color 0.3s ease;
-      }
-
-      .nav-links a:hover {
-        color: #e50914;
-      }
-
-      .search-bar {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-      }
-
-      .search-bar input {
-        width: 100%;
-        max-width: 800px;
-        padding: 10px 20px;
-        border: 2px solid #ccc;
-        border-radius: 30px;
-        font-size: 16px;
-        outline: none;
-        transition: border-color 0.3s ease;
-      }
-
-      .search-bar input:focus {
-        border-color: #e50914;
-      }
-
-      .buttons {
-        display: flex;
-      }
-
-      .button {
-        padding: 10px 20px;
-        border-radius: 30px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        margin-left: 10px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      .login-button {
-        background-color: #e50914;
-      }
-
-      .login-button:hover {
-        background-color: #b00710;
-      }
-
-      .sign-up-button {
-        background-color: #e0e0e0;
-        color: #333;
-      }
-
-      .sign-up-button:hover {
-        background-color: #cccccc;
-      }
-
-      .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-        gap: 20px;
-      }
-
-      .image-container {
-        width: calc(33.333% - 40px); /* 3 columns layout with gap */
-        background-color: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-      }
-
-      .image-container img {
-        width: 100%;
-        height: auto;
-        display: block;
-        transition: transform 0.3s ease;
-      }
-
-      .image-container:hover {
-        transform: scale(1.05);
-      }
-
-      .image-container:hover img {
-        transform: scale(1.1);
-      }
-
-      /* Responsive layout */
-      @media (max-width: 1200px) {
-        .image-container {
-          width: calc(50% - 40px); /* 2 columns layout */
-        }
-      }
-
-      @media (max-width: 768px) {
-        .image-container {
-          width: calc(100% - 40px); /* Single column layout */
-        }
-
-        .nav-links li {
-          margin-right: 10px;
-        }
-
-        .search-bar input {
-          max-width: 400px;
-        }
-
-        .buttons .button {
-          padding: 8px 15px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .nav {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .buttons {
-          margin-top: 10px;
-        }
-
-        .search-bar input {
-          max-width: 100%;
-        }
-
-        .nav-links {
-          justify-content: center;
-          margin-top: 10px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./CSS/today.css">
   </head>
   <body>
     <div class="container">
       <div class="nav">
         <div class="logo">
-          <a href="index.html"><img src="./Pinterest-Logo.png" alt="Pinterest Logo" /></a>
+          <a href="./index.html"><img src="./images/Pinterest-Logo.png" alt="Pinterest Logo" /></a>
         </div>
 
         <ul class="nav-links">
           <li><a href="./today.html">Today</a></li>
-          <li><a href="#">Watch</a></li>
-          <li><a href="#">Explore</a></li>
+          <li><a href="./watch.html">Watch</a></li>
+          <li><a href="./explore.html">Explore</a></li>
         </ul>
       </div>
 
@@ -224,16 +41,16 @@
         <img src="https://www.astromantra.com/wp-content/uploads/2012/02/Hanuman-Puja.webp" alt="Image 3" />
       </div>
       <div class="image-container">
-        <img src="https://cdn.pixabay.com/photo/2024/04/28/10/23/ai-generated-8725261_1280.jpg" alt="Image 3" />
+        <img src="https://cdn.pixabay.com/photo/2024/04/28/10/23/ai-generated-8725261_1280.jpg" alt="Image 4" />
       </div>
       <div class="image-container">
-        <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/IE/AP/NM/24594283/71wpvrncqll-sl1500--500x500.jpg" alt="Image 3" />
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/IE/AP/NM/24594283/71wpvrncqll-sl1500--500x500.jpg" alt="Image 5" />
       </div>
       <div class="image-container">
-        <img src="https://i.pinimg.com/736x/44/60/ee/4460eeb616dbfc0b40b8be6a4ffc2a12.jpg" alt="Image 3" />
+        <img src="https://i.pinimg.com/736x/44/60/ee/4460eeb616dbfc0b40b8be6a4ffc2a12.jpg" alt="Image 6" />
       </div>
       <div class="image-container">
-        <img src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/44896/281595/1575022391825_Vishnu_Mudra_Vimanika_Arts__52489.1687415996.jpg?c=2&imbypass=on" alt="Image 3" />
+        <img src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/44896/281595/1575022391825_Vishnu_Mudra_Vimanika_Arts__52489.1687415996.jpg?c=2&imbypass=on" alt="Image 7" />
       </div>
     </div>
   </body>
