@@ -101,30 +101,24 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 30px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1em;
-}
-
-footer a {
+    padding: 20px;
+  }
+  
+  footer a {
     color: #ddd;
     text-decoration: none;
     margin: 0 15px;
     font-size: 14px;
     transition: color 0.3s ease;
-}
-
-footer a:hover {
+  }
+  
+  footer a:hover {
     color: #fff;
-}
-
-.footer-links {
+  }
+  
+  .footer-links {
     margin-top: 10px;
-}
+  }
 
 .team {
     margin-top: 60px;
