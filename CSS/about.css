@@ -7,28 +7,28 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 85%; /* Adjusted width for a more centered and balanced look */
     margin: 0 auto;
     padding: 20px;
 }
 
 header {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
-    padding: 80px 0;
+    padding: 60px 0; /* Slightly reduced padding for better balance */
     text-align: center;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.8em; /* Slight reduction for better readability */
     margin: 0;
     letter-spacing: 2px;
     font-weight: bold;
 }
 
 header p {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #fff8f0;
     margin-top: 10px;
 }
@@ -42,7 +42,7 @@ header p {
 }
 
 .about-content h2 {
-    font-size: 2em;
+    font-size: 2.2em; /* Slight increase for better section emphasis */
     margin-bottom: 15px;
     color: #333;
 }
@@ -67,18 +67,18 @@ header p {
 
 .cta {
     background: linear-gradient(to right, #56ccf2, #2f80ed);
-    padding: 60px 0;
+    padding: 50px 0; /* Reduced padding to balance spacing */
     color: white;
     text-align: center;
 }
 
 .cta h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin-bottom: 20px;
 }
 
 .cta p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-bottom: 30px;
 }
 
@@ -101,24 +101,25 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-  }
-  
-  footer a {
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
     color: #ddd;
     text-decoration: none;
     margin: 0 15px;
     font-size: 14px;
     transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     color: #fff;
-  }
-  
-  .footer-links {
+}
+
+.footer-links {
     margin-top: 10px;
-  }
+}
 
 .team {
     margin-top: 60px;
@@ -126,18 +127,19 @@ footer {
 }
 
 .team h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 40px;
 }
 
 .team-members {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
 }
 
 .team-member {
     flex: 1;
-    margin: 0 20px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -204,15 +206,14 @@ footer {
     .team-member {
         margin: 20px 0;
         flex: none;
-        /* Prevent flex-grow on smaller screens */
     }
 
     header {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     header p {
@@ -255,7 +256,7 @@ footer {
     }
 
     .about-content h2 {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     .about-content p,
@@ -269,6 +270,10 @@ footer {
 
     .cta p {
         font-size: 0.9em;
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Reduced button size for small screens */
     }
 
     .team-member img {
