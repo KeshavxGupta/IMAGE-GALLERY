@@ -17,7 +17,6 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Container styling */
 .container {
   display: flex;
   justify-content: space-between;
@@ -34,7 +33,6 @@ body {
   margin-right: 10px;
 }
 
-/* Navigation */
 .nav {
   display: flex;
   align-items: center;
@@ -62,7 +60,6 @@ body {
   color: var(--primary-color);
 }
 
-/* Buttons */
 .buttons {
   display: flex;
 }
@@ -99,7 +96,6 @@ body {
   box-shadow: var(--box-shadow-heavy);
 }
 
-/* Hero Sections */
 .hero,
 .hero2,
 .hero3 {
@@ -137,7 +133,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* Image Grid */
 .image-grid {
   display: flex;
   justify-content: center;
@@ -160,7 +155,6 @@ body {
   box-shadow: var(--box-shadow-heavy);
 }
 
-/* Footer */
 footer {
   background-color: var(--text-color);
   color: white;
