@@ -110,6 +110,22 @@ footer p {
     font-size: 1em;
 }
 
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
 .team {
     margin-top: 60px;
     text-align: center;
@@ -193,7 +209,8 @@ footer p {
 
     .team-member {
         margin: 20px 0;
-        flex: none; /* Prevent flex-grow on smaller screens */
+        flex: none;
+        /* Prevent flex-grow on smaller screens */
     }
 
     header {
