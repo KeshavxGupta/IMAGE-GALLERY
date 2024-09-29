@@ -7,21 +7,21 @@ body {
 }
 
 .container {
-    width: 85%; /* Adjusted width for a more centered and balanced look */
+    width: 85%; 
     margin: 0 auto;
     padding: 20px;
 }
 
 header {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
-    padding: 60px 0; /* Slightly reduced padding for better balance */
+    padding: 60px 0; 
     text-align: center;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 2.8em; /* Slight reduction for better readability */
+    font-size: 2.8em; 
     margin: 0;
     letter-spacing: 2px;
     font-weight: bold;
@@ -42,7 +42,7 @@ header p {
 }
 
 .about-content h2 {
-    font-size: 2.2em; /* Slight increase for better section emphasis */
+    font-size: 2.2em; 
     margin-bottom: 15px;
     color: #333;
 }
@@ -67,7 +67,7 @@ header p {
 
 .cta {
     background: linear-gradient(to right, #56ccf2, #2f80ed);
-    padding: 50px 0; /* Reduced padding to balance spacing */
+    padding: 50px 0; 
     color: white;
     text-align: center;
 }
@@ -134,7 +134,7 @@ footer a:hover {
 .team-members {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
+    flex-wrap: wrap; 
 }
 
 .team-member {
@@ -161,7 +161,6 @@ footer a:hover {
     color: #777;
 }
 
-/* Media Queries */
 @media (max-width: 1200px) {
     .container {
         width: 90%;
@@ -273,7 +272,7 @@ footer a:hover {
     }
 
     .cta-button {
-        padding: 10px 20px; /* Reduced button size for small screens */
+        padding: 10px 20px; 
     }
 
     .team-member img {
