@@ -10,6 +10,10 @@
   --box-shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
