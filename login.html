@@ -2,45 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/login.css" />
     <title>Login</title>
-    <link rel="stylesheet" href="./CSS/login.css">
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
   </head>
   <body>
-    <div class="login-container">
-      <div class="login-box">
-        <div class="logo">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/800px-Pinterest-logo.png"
-            alt="Pinterest Logo"
-          />
+    <div class="container">
+      <!-- Sign In Form -->
+      <div class="form-container sign-in">
+        <h1>Sign In</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <h2>Welcome to Pixora</h2>
-        <form>
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
-          <a href="#" class="forgot-password">Forgot your password?</a>
-          <button type="submit" class="login-btn">Log in</button>
-          <div class="separator">OR</div>
-          <button class="social-btn facebook-btn">
-            <i class="fab fa-facebook-f"></i> Continue with Facebook
-          </button>
-          <button class="social-btn google-btn">
-            <i class="fab fa-google"></i> Continue with Google
-          </button>
-        </form>
-        <p class="terms">
-          By continuing, you agree to Pixora's
-          <a href="terms.html">Terms of Service</a> and acknowledge you've read our
-          <a href="privacy.html">Privacy Policy</a>.
-        </p>
-        <p class="signup">Not on Pixora yet? <a href="signup.html">Sign up</a></p>
-        <p class="business">
-          Are you a business? <a href="business.html">Get started here!</a>
+        <p>Enter your email and password to sign in</p>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button>Sign In</button>
+        <p style="margin-top: 20px">
+          Don't have an account?
+          <button onclick="toggleForms()">Sign Up</button>
         </p>
       </div>
+
+      <!-- Sign Up Form -->
+      <div class="form-container sign-up" style="display: none">
+        <h1>Create Account</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Sign up with your personal details</p>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="date" name="Birthdate" id="Birthdate" required />
+        <button>Sign Up</button>
+        <p style="margin-top: 20px">
+          Already have an account?
+          <button onclick="toggleForms()">Sign In</button>
+        </p>
+      </div>
+
+      <!-- Toggle Container -->
+      <div class="toggle-container">
+        <h1>Welcome!</h1>
+        <p>Use the buttons to switch between Sign In and Sign Up</p>
+        <button onclick="toggleForms()">Switch Form</button>
+      </div>
     </div>
+
+    <script>
+      function toggleForms() {
+        const signInForm = document.querySelector(".sign-in");
+        const signUpForm = document.querySelector(".sign-up");
+        signInForm.style.display =
+          signInForm.style.display === "none" ? "flex" : "none";
+        signUpForm.style.display =
+          signUpForm.style.display === "none" ? "flex" : "none";
+      }
+    </script>
   </body>
 </html>
