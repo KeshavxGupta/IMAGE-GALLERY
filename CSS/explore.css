@@ -253,7 +253,6 @@ html {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.2);
-  /* Adds a subtle overlay */
   z-index: 1;
 }
 
@@ -295,7 +294,6 @@ html {
   }
 }
 
-/* Main Container */
 .shayari-form-container {
   text-align: center;
   margin: 20px auto;
@@ -311,7 +309,6 @@ html {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Heading Style */
 .shayari-form-container h2 {
   color: #d81b60;
   font-size: 2em;
@@ -320,15 +317,12 @@ html {
   cursor: pointer;
 }
 
-/* Textarea Style */
 .shayari-form textarea {
   width: 90%;
   height: 180px;
   padding: 12px 15px;
-  /* Reduced padding for better control */
   font-size: 1em;
   line-height: 1.4;
-  /* Adjusted line height to prevent overflow */
   color: #333;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -344,17 +338,13 @@ html {
   box-shadow: 0 0 5px rgba(216, 27, 96, 0.3);
 }
 
-/* Placeholder Style */
 .shayari-form textarea::placeholder {
   color: #999;
   font-size: 1em;
   line-height: 1.4;
-  /* Matches line height of textarea to keep it contained */
   text-align: left;
-  /* Optional: align text left if you want consistency */
 }
 
-/* Button Style */
 .shayari-form button {
   margin-top: 20px;
   padding: 12px 30px;
@@ -374,7 +364,6 @@ html {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive adjustments for tablets */
 @media (max-width: 768px) {
   .shayari-form-container {
     padding: 20px;
@@ -396,7 +385,6 @@ html {
   }
 }
 
-/* Enhanced adjustments for small screens (up to 480px) */
 @media (max-width: 480px) {
   .shayari-form-container {
     padding: 15px;
@@ -413,13 +401,11 @@ html {
     font-size: 0.95em;
     height: 120px;
     padding: 10px;
-    /* Adjust padding for smaller screens */
   }
 
   .shayari-form textarea::placeholder {
     font-size: 0.9em;
     line-height: 1.3;
-    /* Further reduce line-height for smaller screens */
   }
 
   .shayari-form button {
