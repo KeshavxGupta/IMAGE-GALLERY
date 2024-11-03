@@ -4,70 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore</title>
-    <link rel="stylesheet" href="./CSS/explore.css" />
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sampleexplore.css" />
   </head>
 
   <body>
-    <div class="container">
+    <!-- Your HTML content here -->
+    <div class="container" id="top">
       <div class="nav">
         <div class="logo">
-          <a href="./index.html"><img src="./images/PIXORA_LOGO.jpg" alt="Pixora Logo" /></a>
+          <a href="./index.html"
+            ><img src="./images/1727708402307.jpg" alt="Pixora Logo"
+          /></a>
         </div>
 
         <ul class="nav-links">
           <li><a href="./today.html">Today</a></li>
           <li><a href="./watch.html">Watch</a></li>
-          <li><a href="./explore.html">Explore</a></li>
+          <li><a href="./explore.html" class="active">Explore</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
         </ul>
       </div>
 
       <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Search by keyword" />
+        <input type="text" id="search-input" placeholder="Search" />
       </div>
 
       <div class="buttons">
         <a href="./login.html" class="button login-button">Log in</a>
-        <a href="./signup.html" class="button sign-up-button">Sign up</a>
       </div>
     </div>
 
-    <div class="content" id="blogGallery">
-      <div class="blog-container">
-        <div class="blog-image">
-          <img src="./images/explore1.avif" alt="Meditation Image" />
+    <div class="intro-section">
+      <div class="intro-content">
+        <h1><span>✨</span> Welcome to the World of Shayari <span>✨</span></h1>
+        <p>
+          Discover the beauty of poetic expressions and heartfelt emotions
+          through our curated Shayari collection. Embrace the rhythm of words
+          and engage with our diverse audience.
+        </p>
+      </div>
+    </div>
+
+    <div class="content" id="shayariGallery">
+      <div class="shayari-container">
+        <div class="shayari-card"></div>
+        <div class="shayari-text">
+          तेरे नाम से ही दिल धड़कता है मेरा,<br />
+          तू पास हो तो ये जहाँ खुबसूरत लगता है। <br />
+          तेरी हंसी में जैसे सारा जहां समा जाता है,<br />
+          और तेरी बाहों में मिलकर सुकून का एहसास आता है।
         </div>
-        <div class="blog-title">The Power of Meditation</div>
-        <div class="blog-description">
-          Discover the ancient practice of meditation and how it helps to calm the mind, improve focus, and build inner peace.
-        </div>
-        <div class="blog-author">By John Doe</div>
-        <a href="#" class="read-more-button">Read more</a>
       </div>
 
-      <div class="blog-container">
-        <div class="blog-image">
-          <img src="./images/explore2.webp" alt="Yoga for Beginners" />
+      <div class="shayari-container">
+        <div class="shayari-card"></div>
+        <div class="shayari-text">
+          वो रिश्ता भी कितना अजीब था,<br />
+          लफ़्ज़ कम एहसास ज़्यादा था। <br />
+          आँखों में बसी थी जो मोहब्बत कभी,<br />
+          अब वहीं दर्द का सैलाब ज़्यादा था।<br />
+          तू दूर क्या हुआ, ज़िन्दगी ठहर सी गई,<br />
+          मुस्कुराहटें गुम, और आंसुओं का हिसाब ज़्यादा था।
         </div>
-        <div class="blog-title">Yoga for Beginners</div>
-        <div class="blog-description">
-          A beginner's guide to practicing yoga at home, focusing on essential postures and breathing techniques.
-        </div>
-        <div class="blog-author">By Jane Smith</div>
-        <a href="#" class="read-more-button">Read more</a>
       </div>
 
-      <div class="blog-container">
-        <div class="blog-image">
-          <img src="./images/explore3.jpg" alt="Nutrition for a Healthy Life" />
+      <div class="shayari-container">
+        <div class="shayari-card"></div>
+        <div class="shayari-text">
+          तेरी मोहब्बत में डूब कर, मैंने खुद को पाया है,<br />
+          तेरी हंसी के लम्हों में, हर ग़म को भुलाया है।<br />
+          मगर अब ये फासले दिल को चुभते हैं इस कदर,<br />
+          जैसे तू पास हो, और मैंने तुझसे दूरियां बनाई हैं।
         </div>
-        <div class="blog-title">Nutrition for a Healthy Life</div>
-        <div class="blog-description">
-          Learn how a balanced diet can improve your health and well-being, with tips on healthy eating habits.
-        </div>
-        <div class="blog-author">By Mike Johnson</div>
-        <a href="#" class="read-more-button">Read more</a>
       </div>
+      <div class="shayari-container">
+        <div class="shayari-card"></div>
+        <div class="shayari-text">
+          तेरी हर एक अदा का क़ैदी हूँ मैं,<br />
+          तेरे प्यार के समंदर में डूबता सा दीवाना हूँ मैं।<br />
+          तू जो छू ले रूह को, तो बहक जाती हैं साँसें,<br />
+          तू मेरी ज़िंदगी, मेरा इश्क़, मेरा फ़साना हूँ मैं।
+        </div>
+      </div>
+      <div class="shayari-container">
+        <div class="shayari-card"></div>
+        <div class="shayari-text">
+          तुम्हारे बिना ये ख़ामोशी भी शोर बन जाती है,<br />
+          तुमसे मिलूं तो हर ख़ुशी को सुकून मिल जाती है।<br />
+          तुम्हारी मुस्कान, जैसे दिल को कोई साज मिले,<br />
+          तुम हो साथ, तो ज़िन्दगी को उसके मायने आज मिले।<br />
+          हर लफ़्ज़ तुम्हारे नाम से महकता है,<br />
+          हर साँस में अब बस तुम्हारा ही इम्तिहान बाकी है।
+        </div>
+      </div>
+      <div class="shayari-container">
+        <div class="shayari-card"></div>
+        <div class="shayari-text">
+          दिल के टुकड़ों को संभालूं या तेरी यादों को,<br />
+          वो लम्हे जो संग बिताए थे, अब सिसकियों में डूबे हैं।<br />
+          तेरे बिना ये शामें भी उदास रहती हैं,<br />
+          हर ख़्वाब अधूरा, हर चाहत सवाल बन गई है।<br />
+          वो वादे जो कभी टूटने ना थे, आज बिखरे हैं,<br />
+          तेरे बिन ये दिल अब बस एक वीराना सा लगता है।
+        </div>
+      </div>
+    </div>
+
+    <div class="shayari-form-container">
+      <h2>Submit Your Shayari</h2>
+      <form action="post_shayari.php" method="POST" class="shayari-form">
+        <textarea
+          name="shayari"
+          placeholder="Write your Shayari here..."
+          required
+        ></textarea>
+        <button type="submit">Post Shayari</button>
+      </form>
     </div>
 
     <footer>
@@ -77,6 +134,7 @@
         <a href="./privacy.html">Privacy Policy</a>
         <a href="mailto:keshav40353@gmail.com">Contact Us</a>
         <a href="./about.html">About Us</a>
+        <a href="#top" style="color: #e50914; font-size: 14px">Back to Top</a>
       </div>
     </footer>
   </body>
