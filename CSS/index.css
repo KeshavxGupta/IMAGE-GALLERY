@@ -71,18 +71,6 @@ body {
   transform: scale(1.05);
 }
 
-.nav-links a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: var(--primary-color);
-  transition: width 0.3s;
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-}
-
 .nav-links a:hover::after {
   width: 100%;
 }
