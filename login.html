@@ -2,42 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Login</title>
-    <link rel="stylesheet" href="./CSS/login.css">
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
+    <link rel="stylesheet" href="./CSS/login.css">
   </head>
   <body>
-<div class="login-container">
-      <div class="login-box">
-        <div class="logo">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/800px-Pinterest-logo.png"
-            alt="Pinterest Logo"
-          />
-</div>
-        <h2>Welcome to Pixora</h2>
-        <form>
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
-          <a href="#" class="forgot-password">Forgot your password?</a>
-          <button type="submit" class="login-btn">Log in</button>
-          <div class="separator">OR</div>
-          <button class="social-btn facebook-btn">
-            <i class="fab fa-facebook-f"></i> Continue with Facebook
-          </button>
-          <button class="social-btn google-btn">
-            <i class="fab fa-google"></i> Continue with Google
-          </button>
-        </form>
-        <p class="terms">
-          By continuing, you agree to our Pixora 
-          <a href="terms.html">Terms of Service</a> and 
-          <a href="privacy.html">Privacy Policy</a>.
-        </p>
-        <p class="signup">Not on Pinterest yet? <a href="signup.html">Sign up</a></p>
+    <div class="container">
+      <!-- Toggle buttons -->
+      <input type="radio" id="login-toggle" name="form-toggle" checked />
+      <input type="radio" id="sign-up-toggle" name="form-toggle" />
+
+      <!-- Sign In Form -->
+      <div class="form-container Login">
+        <h1>Login</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Enter your email and password to login</p>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button>Login</button>
       </div>
-</div>
+
+      <!-- Sign Up Form -->
+      <div class="form-container sign-up">
+        <h1>Create Account</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Sign up with your personal details</p>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="date" name="Birthdate" id="Birthdate" required />
+        <button>Sign Up</button>
+      </div>
+
+      <!-- Toggle Container -->
+      <div class="toggle-container">
+        <h1>Welcome!</h1>
+        <p>Use the buttons to switch between Login and Sign Up</p>
+        <label for="login-toggle">Login</label>
+        <label for="sign-up-toggle">Sign Up</label>
+      </div>
+    </div>
   </body>
 </html>
