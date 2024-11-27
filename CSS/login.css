@@ -1,177 +1,206 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
 
-body {
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
-}
+      body {
+        background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  width: 100%;
-  max-width: 900px;
-}
+      .container {
+        display: flex;
+        flex-direction: row;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        max-width: 900px;
+        animation: fadeIn 0.8s ease;
+      }
 
-.form-container {
-  width: 50%;
-  padding: 50px 30px;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.6s ease-in-out;
-}
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-.form-container h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
+      /* Form Containers */
+      .form-container {
+        width: 50%;
+        padding: 50px 30px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
 
-.form-container p {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 30px;
-  text-align: center;
-  max-width: 250px;
-}
+      .form-container h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
 
-.form-container input {
-  width: 80%;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 50px;
-  border: 1px solid #ddd;
-  font-size: 0.9rem;
-  background-color: #f9f9f9;
-  transition: border-color 0.3s;
-}
+      .form-container p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 30px;
+        max-width: 300px;
+        line-height: 1.6;
+        text-align: center; /* Ensures the content is centered */
+        margin: 0 auto; /* Centers the paragraph itself */
+      }
 
-.form-container input:focus {
-  border-color: #6a11cb;
-}
+      .form-container input {
+        width: 85%;
+        padding: 15px 20px;
+        margin: 10px 0;
+        border-radius: 25px;
+        border: 1px solid #ddd;
+        font-size: 1rem;
+        transition: box-shadow 0.3s, border-color 0.3s;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
 
-.form-container button {
-  width: 80%;
-  padding: 15px;
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
+      .form-container input:focus {
+        border-color: #6a11cb;
+        box-shadow: 0 4px 8px rgba(106, 17, 203, 0.2);
+      }
 
-.form-container button:hover {
-  transform: scale(1.05);
-}
+      .form-container button {
+        width: 85%;
+        padding: 15px;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
 
-.social-icons {
-  margin: 20px 0;
-}
+      .form-container button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(106, 17, 203, 0.3);
+      }
 
-.social-icons a {
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 3px;
-  width: 40px;
-  height: 40px;
-  text-decoration: none;
-}
+      /* Social Icons */
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0;
+      }
 
-.social-icons a:hover {
-  background-color: #222;
-  color: #fff;
-  transition: background-color 0.3s;
-  transform: scale(1.05);
-}
+      .social-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: #666;
+        transition: all 0.3s ease-in-out;
+      }
 
-.toggle-container {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: #fff;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 30px;
-  text-align: center;
-}
+      .social-icons a:hover {
+        color: #fff;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        border-color: transparent;
+        transform: scale(1.2);
+      }
 
-.toggle-container h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
+      /* Toggle Section */
+      .toggle-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+        text-align: center;
+        color: #fff;
+        padding: 50px 30px;
+        box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
 
-.toggle-container p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
+      .toggle-container h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
 
-/* Hide radio buttons */
-#login-toggle,
-#sign-up-toggle {
-  display: none;
-}
+      .toggle-container p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+        max-width: 80%;
+        line-height: 1.5;
+      }
 
-/* Toggle buttons */
-label[for="login-toggle"],
-label[for="sign-up-toggle"] {
-  background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  padding: 10px 30px;
-  font-size: 1rem;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin: 5px;
-}
+      .toggle-container label {
+        display: inline-block;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        padding: 10px 30px;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        margin: 10px;
+        transition: all 0.3s ease;
+      }
 
-label[for="login-toggle"]:hover,
-label[for="sign-up-toggle"]:hover {
-  background-color: #fff;
-  color: #6a11cb;
-}
+      .toggle-container label:hover {
+        background: #fff;
+        color: #6a11cb;
+      }
 
-/* Show the correct form based on toggle selection */
-#login-toggle:checked~.Login {
-  display: flex;
-}
+      /* Show the correct form */
+      #login-toggle:checked ~ .Login {
+        display: flex;
+      }
 
-#sign-up-toggle:checked~.sign-up {
-  display: flex;
-}
+      #sign-up-toggle:checked ~ .sign-up {
+        display: flex;
+      }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    max-width: 500px;
-  }
+      /* Mobile Adjustments */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          width: 100%;
+        }
 
-  .form-container,
-  .toggle-container {
-    width: 100%;
-  }
-}
+        .form-container,
+        .toggle-container {
+          width: 100%;
+        }
+
+        .social-icons a {
+          width: 35px;
+          height: 35px;
+          font-size: 1.2rem;
+        }
+      }
