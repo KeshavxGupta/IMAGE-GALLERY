@@ -123,6 +123,47 @@ body {
     transform: translateY(-2px);
 }
 
+.user-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .user-icon img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+  }
+  
+  #logout-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  #logout-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  #logout-button:active {
+    transform: scale(0.95);
+  }
+
 .intro {
     text-align: center;
     height: 70vh;
@@ -221,38 +262,6 @@ body {
     transition: opacity 0.3s;
 }
 
-.load {
-    display: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #f3f3f3;
-    border-top-color: #333;
-    border-radius: 50%;
-    animation: spinner 1s linear infinite;
-}
-
-@keyframes spinner {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.load p {
-    font-size: 1.2em;
-    color: #333;
-    margin-left: 10px;
-}
-
 .upload-section {
     text-align: center;
     padding: 20px;
@@ -296,6 +305,19 @@ body {
 #uploadForm button:hover {
     background-color: #b00710;
 }
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #b00710;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+  }
 
 footer {
     background-color: #333;
