@@ -9,7 +9,7 @@
     />
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
-    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/login.css" />
   </head>
   <body>
     <div class="container">
@@ -21,7 +21,9 @@
       <div class="form-container Login">
         <h1>Login</h1>
         <div class="social-icons">
-          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
           <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
           <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -36,7 +38,9 @@
       <div class="form-container sign-up">
         <h1>Create Account</h1>
         <div class="social-icons">
-          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
           <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
           <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -57,4 +61,63 @@
       </div>
     </div>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loginToggle = document.getElementById("login-toggle");
+      const signUpToggle = document.getElementById("sign-up-toggle");
+      const loginForm = document.querySelector(".form-container.Login");
+      const signUpForm = document.querySelector(".form-container.sign-up");
+
+      const toggleForms = () => {
+        loginForm.style.display = loginToggle.checked ? "block" : "none";
+        signUpForm.style.display = signUpToggle.checked ? "block" : "none";
+      };
+
+      loginToggle.addEventListener("change", toggleForms);
+      signUpToggle.addEventListener("change", toggleForms);
+
+      const handleFormSubmission = (form, isLogin) => {
+        const email = form.querySelector("input[type='email']").value.trim();
+        const password = form
+          .querySelector("input[type='password']")
+          .value.trim();
+        const birthdate = isLogin
+          ? null
+          : form.querySelector("input[type='date']").value.trim();
+
+        if (!email || !password || (!isLogin && !birthdate)) {
+          alert("Please fill out all required fields.");
+          return;
+        }
+
+        if (isLogin) {
+          // Simulate login logic
+          localStorage.setItem("isLoggedIn", "true");
+          localStorage.setItem("email", email);
+          alert("Login successful! Redirecting to homepage...");
+          window.location.href = "./index.html";
+        } else {
+          // Simulate sign-up logic
+          localStorage.setItem("registeredEmail", email);
+          localStorage.setItem("registeredBirthdate", birthdate);
+          alert("Account created successfully! You can now log in.");
+          loginToggle.checked = true;
+          toggleForms();
+        }
+      };
+
+      loginForm.querySelector("button").addEventListener("click", (e) => {
+        e.preventDefault();
+        handleFormSubmission(loginForm, true);
+      });
+
+      signUpForm.querySelector("button").addEventListener("click", (e) => {
+        e.preventDefault();
+        handleFormSubmission(signUpForm, false);
+      });
+
+      // Initialize form visibility
+      toggleForms();
+    });
+  </script>
 </html>
