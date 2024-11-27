@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/profile.css">
+    <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
+  </head>
+  <body>
+    <div class="profile-page">
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="background-overlay"></div>
+        <div class="hero-content">
+          <img
+            src="./images/Gemini_Generated_Image_z9j8jjz9j8jjz9j8.jpeg"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <h1 class="username">John Doe</h1>
+          <p class="tagline">Innovator. Creator. Dreamer.</p>
+          <div class="hero-stats">
+            <div>
+              <i class="fa fa-users"></i> <strong>150</strong> Followers
+            </div>
+            <div><i class="fa fa-image"></i> <strong>45</strong> Posts</div>
+            <div>
+              <i class="fa fa-trophy"></i> <strong>20</strong> Achievements
+            </div>
+          </div>
+          <button class="edit-btn">
+            <i class="fa fa-edit"></i> Edit Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Section -->
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('overview')">
+          Overview
+        </button>
+        <button class="tab" onclick="showTab('details')">Details</button>
+        <button class="tab" onclick="showTab('activity')">Activity</button>
+        <button class="tab" onclick="showTab('settings')">Settings</button>
+        <button class="tab" onclick="showTab('media')">Media</button>
+      </div>
+
+      <!-- Tab Content -->
+      <div id="overview" class="tab-content active">
+        <h2>Welcome Back, John!</h2>
+        <div class="widgets">
+          <div class="widget">
+            <h3>Profile Completion</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="widget">
+            <h3>Achievements</h3>
+            <p>You’ve unlocked 3 new badges!</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="details" class="tab-content">
+        <h2>Details</h2>
+        <p>Email: john.doe@example.com</p>
+        <p>Phone: +123456789</p>
+        <p>Skills: Web Development, Graphic Design</p>
+        <p>Interests: AI, Traveling, Music</p>
+      </div>
+
+      <div id="activity" class="tab-content">
+        <h2>Recent Activity</h2>
+        <ul>
+          <li>Posted a photo in <strong>#Travel</strong></li>
+          <li>Commented on <strong>"AI in Web Design"</strong></li>
+          <li>Liked <strong>Jane's Post</strong></li>
+        </ul>
+      </div>
+
+      <div id="settings" class="tab-content">
+        <h2>Profile Settings</h2>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="John Doe" />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="john.doe@example.com" />
+          </div>
+          <br>
+          <button type="submit" class="edit-btn1">Save Changes</button>
+        </form>
+      </div>
+
+      <div id="media" class="tab-content">
+        <h2>My Media</h2>
+        <div class="gallery">
+          <img src="./images/wp4885760.jpg" alt="Gallery Image 1" />
+          <img src="./images/wp5680855.jpg" alt="Gallery Image 2" />
+          <img src="./images/wp5967265.jpg" alt="Gallery Image 3" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="mailto:keshav40353@gmail.com">Contact Us</a>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="floating-action-btn">
+      <i class="fa fa-pencil"></i> Edit Profile
+    </div>
+
+    <script>
+      function showTab(tabId) {
+        document.querySelectorAll(".tab-content").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        document.querySelectorAll(".tab").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        document.getElementById(tabId).classList.add("active");
+        document
+          .querySelector(`.tab[onclick="showTab('${tabId}')"]`)
+          .classList.add("active");
+      }
+    </script>
+  </body>
+</html>
