@@ -31,6 +31,14 @@
       <div class="buttons">
         <a href="./login.html" class="button login-button" target="_blank">Log in</a>
       </div>
+      <div class="user-icon" style="display: none">
+        <a href="./profile.html"><img
+          src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg"
+          alt="User Icon"
+          title="User Profile"
+        /></a>
+        <button id="logout-button" style="display: none">Logout</button>
+      </div>
     </div>
 
     <div class="intro">
@@ -292,12 +300,27 @@
       <div class="item"><img src="./images/today9.jpg" alt="" /></div>
       <div class="item"><img src="./images/wp4885760.jpg" alt="" /></div>
       <div class="item"><img src="./images/wp5680855.jpg" alt="" /></div>
-      <div class="item"><img src="./images/wp5967265.jpg" alt="" /></div>
-    </div>
+      <div class="item"><img src="./images/Gemini_Generated_Image_1xhcq51xhcq51xhc.jpeg" alt="" /></div>
+      <div class="item"><img src="./images/Gemini_Generated_Image_67vkq667vkq667vk.jpeg" alt="" /></div>
+      <div class="item"><img src="./images/Gemini_Generated_Image_6pwv4z6pwv4z6pwv.jpeg" alt="" /></div>
+      <div class="item"><img src="./images/Gemini_Generated_Image_j18904j18904j189.jpeg" alt="" /></div>
+      <div class="item"><img src="./images/Gemini_Generated_Image_tqjyg1tqjyg1tqjy.jpeg" alt="" /></div>
+      <div class="item"><img src="./images/Gemini_Generated_Image_v7ly5iv7ly5iv7ly.jpeg" alt="" /></div>
+      <div class="item"><img src="./images/Gemini_Generated_Image_z9j8jjz9j8jjz9j8.jpeg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_futuristic_city_skyline_at_night_glowing_ne_0.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_futuristic_city_skyline_at_night_glowing_ne_1.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_futuristic_city_skyline_at_night_glowing_ne_2.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_futuristic_city_skyline_at_night_glowing_ne_3.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_majestic_mountain_range_during_the_warm_gol_0.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_majestic_mountain_range_during_the_warm_gol_1.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_majestic_mountain_range_during_the_warm_gol_2.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_majestic_mountain_range_during_the_warm_gol_3.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_mesmerizing_abstract_wave_of_luminescent_en_0.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_mesmerizing_abstract_wave_of_luminescent_en_1.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_mesmerizing_abstract_wave_of_luminescent_en_2.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_A_mesmerizing_abstract_wave_of_luminescent_en_3.jpg" alt="" /></div>
+      <div class="item"><img src="./images/Leonardo_Phoenix_Create_a_stunning_modern_city_skyline_at_nigh_1.jpg" alt="" /></div>
 
-    <div class="load">
-      <div class="spinner"></div>
-      <p>Loading...</p>
     </div>
 
     <div class="upload-section">
@@ -308,6 +331,8 @@
       </form>
     </div>
 
+    <button id="backToTop" title="Go to top" onclick="scrollToTop()">↑</button>
+
     <footer>
       <p>&copy; 2024 Pixora. All rights reserved.</p>
       <div class="footer-links">
@@ -315,8 +340,50 @@
         <a href="./privacy.html">Privacy Policy</a>
         <a href="mailto:keshav40353@gmail.com">Contact Us</a>
         <a href="./about.html" target="_blank">About Us</a>
-        <a href="#top" style="color: #e50914; font-size: 14px">Back to Top</a>
       </div>
     </footer>
   </body>
+  <script>
+    // Back to Top Button functionality
+    window.onscroll = function () {
+      var backToTopButton = document.getElementById("backToTop");
+      if (
+        document.body.scrollTop > 300 ||
+        document.documentElement.scrollTop > 300
+      ) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const loginButton = document.querySelector(".login-button");
+      const userIconContainer = document.querySelector(".user-icon");
+      const logoutButton = document.getElementById("logout-button");
+
+      // Update UI based on login state
+      const updateUI = () => {
+        const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+        loginButton.style.display = isLoggedIn ? "none" : "inline-block";
+        userIconContainer.style.display = isLoggedIn ? "block" : "none";
+        logoutButton.style.display = isLoggedIn ? "inline-block" : "none";
+      };
+
+      // Logout functionality
+      logoutButton.addEventListener("click", () => {
+        localStorage.clear(); // Clears all login-related data
+        updateUI();
+        window.location.href = "./login.html"; // Redirect to login page
+      });
+
+      // Initialize UI
+      updateUI();
+    });
+  </script>
 </html>
