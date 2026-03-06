@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./CSS/global.css" />
     <link rel="stylesheet" href="./CSS/watch.css" />
 </head>
+
 <body>
 
     <!-- Custom Cursor -->
@@ -29,10 +31,11 @@
             <div class="magnetic-wrap login-btn-wrap">
                 <a href="./login.html" class="magnetic-btn login-button">Log In</a>
             </div>
-            
+
             <div class="user-icon" style="display: none">
                 <a href="./profile.html">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg" alt="User Profile" />
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg"
+                        alt="User Profile" />
                 </a>
                 <div class="magnetic-wrap ml-2">
                     <button class="magnetic-btn" id="logout-button">Logout</button>
@@ -42,23 +45,25 @@
     </header>
 
     <main class="container py-5 mt-5">
-        
+
         <!-- Video Header -->
         <div class="watch-hero text-center mb-5 reveal pt-5">
             <h1 class="title-display">Visual Motion.</h1>
-            <p class="text-secondary max-w-lg mx-auto">Immerse yourself in our premier reel of high-definition motion picture artistry.</p>
+            <p class="text-secondary max-w-lg mx-auto">Immerse yourself in our premier reel of high-definition motion
+                picture artistry.</p>
         </div>
 
         <!-- Cinema Screen -->
         <div class="cinema-container reveal mb-5" style="transition-delay: 0.2s;">
-            <video id="main-video" class="cinema-video" controls autoplay muted loop>
-                <source src="./videos/3141208-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+            <video id="main-video" class="cinema-video" controls muted loop>
+                <source src="./videos/THIS_IS_4K_MARVEL__UHD_(1080p).mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>
 
         <!-- Video Metadata / Minimal Info -->
-        <div class="video-meta d-flex justify-content-between align-items-center mb-5 reveal border-bottom pb-4" style="border-color: var(--border-light) !important;">
+        <div class="video-meta d-flex justify-content-between align-items-center mb-5 reveal border-bottom pb-4"
+            style="border-color: var(--border-light) !important;">
             <div>
                 <h2 class="title-section mb-1" style="font-size: 2rem;">The Architect's Dream</h2>
                 <p class="text-secondary m-0">A 4K Exploration of Urban Geometry</p>
@@ -71,25 +76,29 @@
         <!-- Up Next / Related (Mini Bento) -->
         <section class="related-videos mt-5 reveal">
             <h3 class="title-section px-3 mb-4">Up Next.</h3>
-            
+
             <div class="row g-4 px-3">
                 <div class="col-md-4">
-                    <div class="related-card HoverExpand" style="cursor: none;">
-                        <img src="./images/Leonardo_Phoenix_A_futuristic_city_skyline_at_night_glowing_ne_2.jpg" alt="Video Thumb" class="img-fluid rounded-4 mb-3" style="aspect-ratio: 16/9; object-fit: cover;" />
+                    <div class="related-card HoverExpand" style="cursor: none;" data-video="./videos/Infinity_-_Anime_Mix_[AMV_Edit]_!(1080p).mp4" data-title="Neon Horizon" data-desc="02:45 • Cyberpunk Studies">
+                        <img src="./images/Leonardo_Phoenix_A_futuristic_city_skyline_at_night_glowing_ne_2.jpg"
+                            alt="Video Thumb" class="img-fluid rounded-4 mb-3"
+                            style="aspect-ratio: 16/9; object-fit: cover;" />
                         <h4 style="font-size: 1.2rem; margin-bottom: 5px;">Neon Horizon</h4>
                         <p class="text-tertiary small">02:45 • Cyberpunk Studies</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="related-card HoverExpand" style="cursor: none;">
-                        <img src="./images/car4.avif" alt="Video Thumb" class="img-fluid rounded-4 mb-3" style="aspect-ratio: 16/9; object-fit: cover;" />
+                    <div class="related-card HoverExpand" style="cursor: none;" data-video="./videos/LAMBORGHINI_EDIT___BEST_FLOW_EDIT(1080p60).mp4" data-title="Velocity" data-desc="05:12 • Automotive Cinematic">
+                        <img src="./images/car4.avif" alt="Video Thumb" class="img-fluid rounded-4 mb-3"
+                            style="aspect-ratio: 16/9; object-fit: cover;" />
                         <h4 style="font-size: 1.2rem; margin-bottom: 5px;">Velocity</h4>
                         <p class="text-tertiary small">05:12 • Automotive Cinematic</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="related-card HoverExpand" style="cursor: none;">
-                        <img src="./images/Anime.webp" alt="Video Thumb" class="img-fluid rounded-4 mb-3" style="aspect-ratio: 16/9; object-fit: cover;" />
+                    <div class="related-card HoverExpand" style="cursor: none;" data-video="./videos/THIS_IS_4K_ANIME__Jujutsu_Kaisen_(1080p).mp4" data-title="Hand-drawn Dreams" data-desc="10:05 • Animation Showcase">
+                        <img src="./images/Anime.webp" alt="Video Thumb" class="img-fluid rounded-4 mb-3"
+                            style="aspect-ratio: 16/9; object-fit: cover;" />
                         <h4 style="font-size: 1.2rem; margin-bottom: 5px;">Hand-drawn Dreams</h4>
                         <p class="text-tertiary small">10:05 • Animation Showcase</p>
                     </div>
@@ -111,5 +120,35 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const mainVideo = document.getElementById("main-video");
+            const videoTitle = document.querySelector(".video-meta .title-section");
+            const videoDesc = document.querySelector(".video-meta .text-secondary");
+            const relatedCards = document.querySelectorAll(".related-card");
+
+            relatedCards.forEach(card => {
+                card.addEventListener("click", () => {
+                    const newSrc = card.getAttribute("data-video");
+                    const newTitle = card.getAttribute("data-title");
+                    const newDesc = card.getAttribute("data-desc");
+
+                    if (newSrc && mainVideo) {
+                        const sourceTag = mainVideo.querySelector("source");
+                        if (sourceTag) {
+                            sourceTag.src = newSrc;
+                            mainVideo.load();
+                            mainVideo.play();
+                        }
+                    }
+                    if (newTitle && videoTitle) videoTitle.textContent = newTitle;
+                    if (newDesc && videoDesc) videoDesc.textContent = newDesc;
+                    
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
