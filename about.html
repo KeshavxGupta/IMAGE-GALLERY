@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT US</title>
-    <script
-      src="https://kit.fontawesome.com/eb3817f40d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./CSS/about.css">
+    <title>Pixora — About</title>
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
-  </head>
-  <body>
-    <section>
-      <div class="container">
-        <div class="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src="./images/avatar2.jpg" alt="Team Member 1" />
-            </div>
-            <div class="contentBx">
-              <h3>Kushan Garg <br /><span>Creative Designer</span></h3>
-            </div>
-          </div>
-          <ul class="sci">
-            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-          </ul>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/global.css" />
+    <link rel="stylesheet" href="./CSS/about.css" />
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Minimal Nav -->
+    <header class="minimal-nav">
+        <div class="logo">
+            <a href="./index.html"><span>Pixora</span></a>
         </div>
-        <div class="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src="./images/avatar1.jpg" alt="Team Member 2" />
+        <ul class="nav-links">
+            <li><a href="./watch.html">Watch</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+        <div class="buttons d-flex align-items-center gap-3">
+            <div class="magnetic-wrap login-btn-wrap">
+                <a href="./login.html" class="magnetic-btn login-button">Log In</a>
             </div>
-            <div class="contentBx">
-              <h3>Keshav Gupta <br /><span>Project Leader</span></h3>
+            
+            <div class="user-icon" style="display: none">
+                <a href="./profile.html">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg" alt="User Profile" />
+                </a>
+                <div class="magnetic-wrap ml-2">
+                    <button class="magnetic-btn" id="logout-button">Logout</button>
+                </div>
             </div>
-          </div>
-          <ul class="sci">
-            <li><a href="https://www.facebook.com/profile.php?id=61567893933267&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.instagram.com/keshav02108/profilecard/?igsh=MTdoMGxieTUwOWFqNg==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-          </ul>
         </div>
-        <div class="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src="./images/avatar3.jpg" alt="Team Member 3" />
-            </div>
-            <div class="contentBx">
-              <h3>Yashit Mittal <br /><span>Creative Designer</span></h3>
-            </div>
-          </div>
-          <ul class="sci">
-            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook" ></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa-brands fa-github" ></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-          </ul>
+    </header>
+
+    <main class="container py-5 mt-5">
+        
+        <div class="editorial-header text-center mb-5 reveal pt-5">
+            <h1 class="title-display">About the Archive.</h1>
+            <p class="text-secondary max-w-lg mx-auto">Curating the pinnacle of digital and physical artistic expression.</p>
         </div>
-      </div>
-    </section>
-  </body>
+
+        <section class="editorial-content reveal mx-auto" style="max-width: 800px; transition-delay: 0.2s;">
+            <p class="lead mb-5" style="font-size: 1.25rem; font-weight: 300;">
+                Pixora is not just a gallery; it is a meticulously curated exhibition space designed for the modern visionary. We believe that art, in all its forms—from the precise geometry of modern architecture to the chaotic brilliance of abstract painting—deserves a platform that strips away the noise and allows the work to breathe.
+            </p>
+
+            <h2 class="title-section mt-5 mb-4">Our Mission</h2>
+            <p class="text-secondary mb-4">
+                To bridge the gap between creation and appreciation by providing an unparalleled visual experience. We source, curate, and display high-definition imagery and cinematic cuts that push the boundaries of aesthetic design. Our collections span across various disciplines including automotive design, fine art, spatial architecture, and animation.
+            </p>
+
+            <h2 class="title-section mt-5 mb-4">The Platform</h2>
+            <p class="text-secondary mb-4">
+                Built on the principles of premium minimalism, the Pixora platform utilizes advanced front-end technologies to deliver a seamless, immersive, and distraction-free environment. Features such as our 'gapless masonry' edge-to-edge layouts, custom kinetic typography, and fluid magnetic interactions ensure that navigating our archive is an experience in itself.
+            </p>
+        </section>
+
+        <!-- Small grid for visual break -->
+        <section class="editorial-grid reveal mt-5 pt-5 mx-auto" style="max-width: 1000px;">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <img src="./images/decor5.webp" alt="Design Architecture" class="img-fluid rounded-4 mb-3" style="filter: grayscale(80%); transition: filter 0.4s ease;" onmouseover="this.style.filter='grayscale(0)'" onmouseout="this.style.filter='grayscale(80%)'" />
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/CP-WA199.jpg" alt="Canvas Art" class="img-fluid rounded-4 mb-3" style="filter: grayscale(80%); transition: filter 0.4s ease;" onmouseover="this.style.filter='grayscale(0)'" onmouseout="this.style.filter='grayscale(80%)'" />
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="minimal-footer reveal">
+        <div class="footer-links">
+            <a href="./terms.html">Terms of Service</a>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="mailto:keshav40353@gmail.com">Contact Us</a>
+            <a href="./about.html" class="active">About Us</a>
+        </div>
+        <p>&copy; 2024 Pixora Archive. Designed for visual excellence.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
 </html>

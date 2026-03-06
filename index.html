@@ -1,298 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pixora</title>
+    <title>Pixora — The Visual Archive</title>
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/global.css">
     <link rel="stylesheet" href="./CSS/index.css">
-  </head>
+</head>
+<body>
 
-  <body>
-    <!-- Navbar Section -->
-<div class="container">
-    <div class="logo">
-      <a href="./index.html"
-        ><img src="./images/1727708402307.jpg" alt="Pixora Logo"
-      /></a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="./watch.html">Watch</a></li>
-      <li><a href="./explore.html">Explore</a></li>
-      <li><a href="./gallery.html">Gallery</a></li>
-    </ul>
-    <div class="buttons">
-      <a href="./login.html" class="button login-button">Log In</a>
-      <div class="user-icon" style="display: none">
-        <a href="./profile.html"><img
-          src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg"
-          alt="User Icon"
-          title="User Profile"
-        /></a>
-        <button id="logout-button" style="display: none">Logout</button>
-      </div>
-    </div>
-  </div>
-  
-
-    <div
-      id="customCarousel"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="4000"
-      data-bs-pause="false"
-    >
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#customCarousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#customCarousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#customCarousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-
-      <!-- Carousel Items -->
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <img
-            src="./images/Leonardo_Phoenix_A_futuristic_city_skyline_at_night_glowing_ne_0.jpg"
-            class="d-block w-100"
-            alt="Slide 1"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Unleash Creativity</h1>
-            <p>Transform your ideas into stunning realities.</p>
-            <a href="#explore" class="cta-button">Explore More</a>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <img
-            src="./images/Leonardo_Phoenix_A_majestic_mountain_range_during_the_warm_gol_0.jpg"
-            class="d-block w-100"
-            alt="Slide 2"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Stay Inspired</h1>
-            <p>Fuel your passion with endless possibilities.</p>
-            <a href="#inspire" class="cta-button">Get Inspired</a>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <img
-            src="./images/Leonardo_Phoenix_A_mesmerizing_abstract_wave_of_luminescent_en_2.jpg"
-            class="d-block w-100"
-            alt="Slide 3"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Elevate Design</h1>
-            <p>Discover tools that empower your creativity.</p>
-            <a href="#design" class="cta-button">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Navigation Arrows -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#customCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#customCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <!-- Preloader -->
+    <div class="preloader" id="global-preloader">
+        <div class="preloader-text">Pixora</div>
     </div>
 
-    <div class="featured-section" id="featured-content">
-      <h1>Featured Content</h1>
-      <div class="featured-grid">
-        <div class="featured-item">
-          <img src="./images/decor1.webp" alt="Decor Idea 1" />
-          <div class="featured-item-content">
-            <h3>Modern Living Room</h3>
-            <p>Transform your space with these chic ideas.</p>
-          </div>
-        </div>
-        <div class="featured-item">
-          <img src="./images/CP-WA199.jpg" alt="Art 1" />
-          <div class="featured-item-content">
-            <h3>Beautiful Paintings</h3>
-            <p>Explore stunning works of art to brighten your home.</p>
-          </div>
-        </div>
-        <div class="featured-item">
-          <img src="./images/vintage-5.webp" alt="Car 1" />
-          <div class="featured-item-content">
-            <h3>Classic Cars</h3>
-            <p>A collection of timeless automotive beauty.</p>
-          </div>
-        </div>
-        <div class="featured-item">
-          <img src="./images/MCDDEAN_WD040.webp" alt="Logan" />
-          <div class="featured-item-content">
-            <h3>Superheroes</h3>
-            <p>Experience the world of superheroes like never before.</p>
-          </div>
-        </div>
-        <div class="featured-item">
-          <img src="./images/Anime.webp" alt="Anime" />
-          <div class="featured-item-content">
-            <h3>Anime</h3>
-            <p>Explore the world of anime and manga.</p>
-          </div>
-        </div>
-        <div class="featured-item">
-          <img
-            src="./images/Pakistan v India - Twenty20 Championship Final.jpg"
-            alt="Sports"
-          />
-          <div class="featured-item-content">
-            <h3>Greatest Moments in Sports</h3>
-            <p>Relive iconic moments and celebrate champions.</p>
-          </div>
-        </div>
-        <div class="featured-item">
-          <img src="./images/pjimage-2022-04-25T103425.290.webp" alt="Music" />
-          <div class="featured-item-content">
-            <h3>Sound of the World</h3>
-            <p>Feel the rhythm with tracks that transcend borders.</p>
-          </div>
-        </div>
-        <div class="featured-item">
-          <img
-            src="./images/Darjeeling-Hill-Station.jpg"
-            alt="Beautiful Scene"
-          />
-          <div class="featured-item-content">
-            <h3>Hidden Gems of the World</h3>
-            <p>Discover breathtaking destinations that few know about.</p>
-          </div>
-        </div>
-        <div class="featured-item">
-          <img
-            src="./images/khajuraho-slider-imggg-3.jpg"
-            alt="Beautiful Scene"
-          />
-          <div class="featured-item-content">
-            <h3>Ancient Wonders</h3>
-            <p>Step back in time and uncover the stories of our ancestors.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
 
-    <div class="image-grid">
-      <h2>Gallery Showcase</h2>
-      <div class="image-grid-wrapper">
-        <img src="./images/decor2.avif" alt="Image 1" loading="lazy" />
-        <img
-          src="./images/Incredible-Shri-Ramji-Picture.webp"
-          alt="Image 2"
-          loading="lazy"
-        />
-        <img
-          src="./images/desktop-wallpaper-varanasi-ghat-varanasi-ganga-mata.jpg"
-          alt="Image 3"
-          loading="lazy"
-        />
-        <img
-          src="./images/collage-india-monuments-heritage-sites-landmarks-tours-travel-destinations_1111209-1068.avif"
-          alt="Image 4"
-          loading="lazy"
-        />
-        <img src="./images/car2.webp" alt="Image 5" loading="lazy" />
-      </div>
-    </div>
+    <!-- Minimal Nav -->
+    <header class="minimal-nav">
+        <div class="logo">
+            <a href="./index.html"><span>Pixora</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./watch.html">Watch</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+        <div class="buttons d-flex align-items-center gap-3">
+            <div class="magnetic-wrap login-btn-wrap">
+                <a href="./login.html" class="magnetic-btn login-button">Log In</a>
+            </div>
+            
+            <div class="user-icon" style="display: none">
+                <a href="./profile.html">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg" alt="User Profile" />
+                </a>
+                <div class="magnetic-wrap ml-2">
+                    <button class="magnetic-btn" id="logout-button">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="testimonials">
-      <h2>What Our Users Say</h2>
-      <blockquote>
-        <p>
-          "Pixora has completely transformed my home decor! Highly recommended!"
-        </p>
-        <cite>- Sarah L.</cite>
-      </blockquote>
-      <blockquote>
-        <p>
-          "I found the perfect art pieces for my living room, thanks to Pixora!"
-        </p>
-        <cite>- James T.</cite>
-      </blockquote>
-    </div>
+    <main>
+        <!-- Massive Hero Section with Parallax -->
+        <section class="hero-section">
+            <div class="hero-bg parallax" style="background-image: url('./images/Leonardo_Phoenix_A_futuristic_city_skyline_at_night_glowing_ne_0.jpg');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-center container">
+                <h1 class="title-display mb-4 reveal">Art,<br>Redefined.</h1>
+                <p class="hero-subtitle mb-5 reveal" style="transition-delay: 0.1s;">A curated archive of the world's most breathtaking visuals, carefully selected for the modern visionary.</p>
+                <div class="reveal" style="transition-delay: 0.2s;">
+                    <div class="magnetic-wrap">
+                        <a href="#featured-bento" class="magnetic-btn btn-primary" style="background: var(--text-primary); color: var(--bg-dark);">Explore Dimensions</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator reveal" style="transition-delay: 0.5s;">
+                <span>Scroll</span>
+                <div class="line"></div>
+            </div>
+        </section>
 
-    <div class="newsletter">
-      <h3>Subscribe to Our Newsletter</h3>
-      <input type="text" placeholder="Enter your email" />
-      <button class="subscribe-button">Subscribe</button>
-    </div>
+        <!-- Bento Box Grid Layout (Asymmetrical) -->
+        <section id="featured-bento" class="bento-section container-fluid">
+            <h2 class="title-section text-center mb-5 reveal px-4">Curated Exhibitions.</h2>
+            
+            <div class="bento-grid">
+                
+                <!-- Large Feature (Spans 2 columns, 2 rows) -->
+                <div class="bento-item bento-large reveal">
+                    <img src="./images/decor1.webp" alt="Decor" class="parallax-img" />
+                    <div class="bento-content">
+                        <h3>Spatial Design</h3>
+                        <p>Modern living spaces reimagined.</p>
+                    </div>
+                </div>
 
-    <div class="footer">
-      <div class="footer-links">
-        <a href="./terms.html">Terms of Service</a>
-        <a href="./privacy.html">Privacy Policy</a>
-        <a href="mailto:keshav40353@gmail.com">Contact Us</a>
-        <a href="./about.html" target="_blank">About Us</a>
-      </div>
-      <p>&copy; 2024 Pixora. All rights reserved.</p>
-    </div>
-  </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const loginButton = document.querySelector(".login-button");
-      const userIconContainer = document.querySelector(".user-icon");
-      const logoutButton = document.getElementById("logout-button");
+                <!-- Medium Feature -->
+                <div class="bento-item bento-medium reveal" style="transition-delay: 0.1s;">
+                    <img src="./images/CP-WA199.jpg" alt="Art" class="parallax-img" />
+                    <div class="bento-content">
+                        <h3>Canvas Fine Art</h3>
+                        <p>Expressions captured in oil and acrylic.</p>
+                    </div>
+                </div>
 
-      // Update UI based on login state
-      const updateUI = () => {
-        const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-        loginButton.style.display = isLoggedIn ? "none" : "inline-block";
-        userIconContainer.style.display = isLoggedIn ? "block" : "none";
-        logoutButton.style.display = isLoggedIn ? "inline-block" : "none";
-      };
+                <!-- Tall Feature (Spans 2 rows) -->
+                <div class="bento-item bento-tall reveal" style="transition-delay: 0.2s;">
+                    <img src="./images/vintage-5.webp" alt="Classic Cars" class="parallax-img" />
+                    <div class="bento-content">
+                        <h3>Automotive Relics</h3>
+                        <p>Timeless engineering.</p>
+                    </div>
+                </div>
 
-      // Logout functionality
-      logoutButton.addEventListener("click", () => {
-        localStorage.clear(); // Clears all login-related data
-        updateUI();
-        window.location.href = "./login.html"; // Redirect to login page
-      });
+                <!-- Small Feature -->
+                <div class="bento-item bento-small reveal" style="transition-delay: 0.1s;">
+                    <img src="./images/Anime.webp" alt="Anime" class="parallax-img" />
+                    <div class="bento-content">
+                        <h3>Anime Realms</h3>
+                        <p>Animated storytelling.</p>
+                    </div>
+                </div>
 
-      // Initialize UI
-      updateUI();
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Wide Feature (Spans 2 columns) -->
+                <div class="bento-item bento-wide reveal" style="transition-delay: 0.2s;">
+                    <img src="./images/Pakistan v India - Twenty20 Championship Final.jpg" alt="Sports" class="parallax-img" style="object-position: top center;" />
+                    <div class="bento-content">
+                        <h3>Glory & Triumph</h3>
+                        <p>Iconic sports moments frozen in time.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Scrolling Marquee / Separator -->
+        <section class="marquee-section border-top border-bottom py-4 my-5" style="border-color: var(--border-light) !important;">
+            <div class="marquee-content">
+                <span>Inspire</span> • <span>Create</span> • <span>Imagine</span> • <span>Design</span> • 
+                <span>Inspire</span> • <span>Create</span> • <span>Imagine</span> • <span>Design</span> • 
+                <span>Inspire</span> • <span>Create</span> • <span>Imagine</span> • <span>Design</span> • 
+            </div>
+        </section>
+
+        <!-- Horizontal Gallery Teaser -->
+        <section class="teaser-gallery container-fluid pt-5 pb-5 mb-5 reveal">
+            <h2 class="title-section px-4 mb-5">Latest Additions.</h2>
+            <div class="horizontal-scroll hide-scrollbar">
+                <div class="h-item">
+                    <img src="./images/decor2.avif" alt="Image 1" />
+                </div>
+                <div class="h-item">
+                    <img src="./images/Incredible-Shri-Ramji-Picture.webp" alt="Image 2" />
+                </div>
+                <div class="h-item">
+                    <img src="./images/desktop-wallpaper-varanasi-ghat-varanasi-ganga-mata.jpg" alt="Image 3" />
+                </div>
+                <div class="h-item">
+                    <img src="./images/collage-india-monuments-heritage-sites-landmarks-tours-travel-destinations_1111209-1068.avif" alt="Image 4" />
+                </div>
+                <div class="h-item">
+                    <img src="./images/car2.webp" alt="Image 5" />
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 pb-5">
+                <div class="magnetic-wrap">
+                    <a href="./gallery.html" class="magnetic-btn">View Complete Archive</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="minimal-footer reveal">
+        <div class="footer-links">
+            <a href="./terms.html">Terms of Service</a>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="mailto:keshav40353@gmail.com">Contact Us</a>
+            <a href="./about.html">About Us</a>
+        </div>
+        <p>&copy; 2024 Pixora Archive. Designed for visual excellence.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        // Index Specific Logic: Parallax Effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            
+            // Hero Parallax
+            const heroBg = document.querySelector('.hero-bg.parallax');
+            if (heroBg) {
+                // Move bg image at 50% scroll speed
+                heroBg.style.transform = `translateY(${scrolled * 0.5}px)`; 
+            }
+
+            // Subtle Item parallax for bento box images to create depth
+            document.querySelectorAll('.parallax-img').forEach(img => {
+                const rect = img.getBoundingClientRect();
+                const centerOffset = window.innerHeight / 2 - (rect.top + rect.height/2);
+                
+                // Only animate if in viewport to save perf
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    img.style.transform = `scale(1.15) translateY(${centerOffset * 0.1}px)`;
+                }
+            });
+        });
+    </script>
+</body>
 </html>

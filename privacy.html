@@ -1,149 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Privacy Policy</title>
-    <link rel="stylesheet" href="./CSS/privacy.css">
+    <title>Pixora — Privacy Policy</title>
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
-  </head>
-  <body>
-    <header class="privacy-header">
-      <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>Your Privacy Matters to Us</p>
-      </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/global.css" />
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="minimal-nav">
+        <div class="logo">
+            <a href="./index.html"><span>Pixora</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./watch.html">Watch</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+        <div class="buttons d-flex align-items-center gap-3">
+            <div class="magnetic-wrap login-btn-wrap">
+                <a href="./login.html" class="magnetic-btn login-button">Log In</a>
+            </div>
+            <div class="user-icon" style="display: none">
+                <a href="./profile.html">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg" alt="User Profile" />
+                </a>
+                <div class="magnetic-wrap ml-2">
+                    <button class="magnetic-btn" id="logout-button">Logout</button>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main class="privacy-content">
-      <div class="container">
-        <section id="introduction">
-          <h2>Introduction</h2>
-          <p>
-            At Pixora, we respect your privacy and are committed to
-            protecting the personal information you share with us. This Privacy
-            Policy explains how we collect, use, and disclose your information.
-          </p>
-          <p>
-            By using our website, you agree to the terms of this policy. Please
-            read it carefully to understand our practices.
-          </p>
-        </section>
+    <main class="container py-5 mt-5">
+        <div class="editorial-header text-center mb-5 reveal pt-5">
+            <h1 class="title-display">Privacy Directive.</h1>
+            <p class="text-secondary">Effective Date: October 2024</p>
+        </div>
 
-        <section id="info-collect">
-          <h2>Information We Collect</h2>
-          <p>We collect information in the following ways:</p>
-          <ul>
-            <li>
-              <strong>Personal Information:</strong> Name, email address, phone
-              number, and other contact details.
-            </li>
-            <li>
-              <strong>Usage Information:</strong> IP address, browser type,
-              device information, and browsing activities.
-            </li>
-            <li>
-              <strong>Cookies:</strong> Information stored in cookies when you
-              visit our site (see our
-              <a href="#cookies">Cookie Policy</a> below).
-            </li>
-          </ul>
-        </section>
+        <section class="editorial-content reveal mx-auto" style="max-width: 800px; transition-delay: 0.2s;">
+            <p class="lead mb-5" style="font-size: 1.25rem; font-weight: 300;">
+                Your privacy is integral. This directive outlines our methodology for data handling within the Pixora ecosystem.
+            </p>
 
-        <section id="info-use">
-          <h2>How We Use Your Information</h2>
-          <p>
-            Your information is used to improve our services and ensure that our
-            website operates smoothly. Specifically, we use your information
-            for:
-          </p>
-          <ol>
-            <li>Providing and personalizing our services.</li>
-            <li>
-              Communicating with you about promotions, updates, and changes.
-            </li>
-            <li>Analyzing website traffic and improving user experience.</li>
-            <li>Complying with legal obligations.</li>
-          </ol>
-        </section>
+            <h2 class="title-section mb-4">1. Data Collection Architecture</h2>
+            <p class="text-secondary mb-4">
+                We utilize minimal data footprints. Only essential authentication parameters (e.g., email vectors) and curated preferences (e.g., saved artifacts) are persisted over secure local or server instances.
+            </p>
 
-        <section id="cookies">
-          <h2>Cookie Policy</h2>
-          <p>
-            Cookies are small text files that are stored on your device to
-            collect information about your interactions with our website. We use
-            cookies to:
-          </p>
-          <ul>
-            <li>Remember your preferences and settings.</li>
-            <li>Provide personalized content and advertisements.</li>
-            <li>Analyze user behavior and website performance.</li>
-          </ul>
-        </section>
+            <h2 class="title-section mt-5 mb-4">2. Interaction Tracking</h2>
+            <p class="text-secondary mb-4">
+                Our visual archives dynamically read your cursor topology to execute the magnetic and tracking animations globally. These metrics occur entirely client-side and are immediately purged after frame rendering.
+            </p>
 
-        <section id="third-party">
-          <h2>Third-Party Sharing</h2>
-          <p>
-            We do not sell or share your personal information with third parties
-            for marketing purposes without your consent. However, we may share
-            information with:
-          </p>
-          <ul>
-            <li>
-              <strong>Service Providers:</strong> Trusted companies that assist
-              in delivering our services.
-            </li>
-            <li>
-              <strong>Law Enforcement:</strong> When required by law or to
-              protect the rights of Pinterest.
-            </li>
-          </ul>
-        </section>
+            <h2 class="title-section mt-5 mb-4">3. External Syndication</h2>
+            <p class="text-secondary mb-4">
+                We do not transfer, syndicate, or broker your interaction data to unverified third parties. Art consumption is personal, and our architecture respects that boundary.
+            </p>
 
-        <section id="data-retention">
-          <h2>Data Retention</h2>
-          <p>
-            We retain your personal information for as long as necessary to
-            provide our services and comply with legal obligations. You may
-            request deletion of your data by contacting us at any time.
-          </p>
+            <div class="mt-5 pt-5 text-center">
+                <a href="./index.html" class="text-secondary text-decoration-underline" style="font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: none;">Return to Archive</a>
+            </div>
         </section>
-
-        <section id="your-rights">
-          <h2>Your Rights</h2>
-          <p>Depending on your location, you may have the following rights:</p>
-          <ul>
-            <li>
-              The right to access, update, or delete your personal information.
-            </li>
-            <li>The right to opt-out of direct marketing communications.</li>
-            <li>
-              The right to withdraw consent where data processing is based on
-              consent.
-            </li>
-          </ul>
-        </section>
-
-        <section id="contact">
-          <h2>Contact Us</h2>
-          <p>
-            If you have any questions or concerns about this Privacy Policy or
-            your personal information, please contact us at:
-          </p>
-          <p><a href="mailto:keshav40353@gmail.com">privacy@Pixora.com</a></p>
-        </section>
-      </div>
     </main>
 
-    <footer class="privacy-footer">
-      <div class="container">
-        <p>
-          © 2024 Pixora. All Rights Reserved. |
-          <a href="./terms.html">Terms of Service</a> |
-          <a href="./index.html">Back  to Home</a>
-        </p>
-      </div>
+    <footer class="minimal-footer reveal">
+        <div class="footer-links">
+            <a href="./terms.html">Terms of Service</a>
+            <a href="./privacy.html" class="active">Privacy Policy</a>
+            <a href="mailto:keshav40353@gmail.com">Contact Us</a>
+            <a href="./about.html">About Us</a>
+        </div>
+        <p>&copy; 2024 Pixora Archive. Designed for visual excellence.</p>
     </footer>
-  </body>
+
+    <script src="./js/main.js"></script>
+</body>
 </html>

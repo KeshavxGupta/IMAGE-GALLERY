@@ -1,134 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Terms of Service</title>
-    <link rel="stylesheet" href="./CSS/terms.css">
+    <title>Pixora — Terms</title>
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico" />
-  </head>
-  <body>
-    <header class="tos-header">
-      <div class="container">
-        <h1>Terms of Service</h1>
-        <p>Effective Date: Dcember 1, 2024</p>
-      </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/global.css" />
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="minimal-nav">
+        <div class="logo">
+            <a href="./index.html"><span>Pixora</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./watch.html">Watch</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+        <div class="buttons d-flex align-items-center gap-3">
+            <div class="magnetic-wrap login-btn-wrap">
+                <a href="./login.html" class="magnetic-btn login-button">Log In</a>
+            </div>
+            <div class="user-icon" style="display: none">
+                <a href="./profile.html">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg" alt="User Profile" />
+                </a>
+                <div class="magnetic-wrap ml-2">
+                    <button class="magnetic-btn" id="logout-button">Logout</button>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <nav class="toc-nav">
-      <div class="container">
-        <ul>
-          <li><a href="#introduction">1. Introduction</a></li>
-          <li><a href="#user-agreement">2. User Agreement</a></li>
-          <li><a href="#privacy-policy">3. Privacy Policy</a></li>
-          <li><a href="#acceptable-use">4. Acceptable Use Policy</a></li>
-          <li><a href="#account-termination">5. Account Termination</a></li>
-          <li><a href="#dispute-resolution">6. Dispute Resolution</a></li>
-          <li><a href="#modifications">7. Modifications to the Terms</a></li>
-          <li><a href="#contact">8. Contact Information</a></li>
-        </ul>
-      </div>
-    </nav>
+    <main class="container py-5 mt-5">
+        <div class="editorial-header text-center mb-5 reveal pt-5">
+            <h1 class="title-display">Terms of Archive.</h1>
+            <p class="text-secondary">Effective Date: October 2024</p>
+        </div>
 
-    <main class="terms-content">
-      <div class="container">
-        <section id="introduction">
-          <h2>1. Introduction</h2>
-          <p>
-            Welcome to Pixora. These Terms of Service govern your use of
-            our website and services. Please read them carefully.
-          </p>
-          <p>
-            By accessing or using our website, you agree to comply with and be
-            bound by these terms. If you do not agree, please refrain from using
-            our services.
-          </p>
-        </section>
+        <section class="editorial-content reveal mx-auto" style="max-width: 800px; transition-delay: 0.2s;">
+            <p class="lead mb-5" style="font-size: 1.25rem; font-weight: 300;">
+                By interacting with the Pixora platform, you agree to our operational conditions outlined below.
+            </p>
 
-        <section id="user-agreement">
-          <h2>2. User Agreement</h2>
-          <p>By using our services, you agree to:</p>
-          <ul>
-            <li>Comply with all applicable laws and regulations.</li>
-            <li>
-              Provide accurate information during registration and keep your
-              account information up to date.
-            </li>
-            <li>
-              Refrain from unauthorized use of our services or attempting to
-              disrupt our operations.
-            </li>
-          </ul>
-        </section>
+            <h2 class="title-section mb-4">1. Asset Usage rights</h2>
+            <p class="text-secondary mb-4">
+                The visual content hosted on the Pixora archive is displayed for aesthetic curation and inspirational purposes. Users are not granted arbitrary commercial reproduction rights unless expressly licensed by the original creator.
+            </p>
 
-        <section id="privacy-policy">
-          <h2>3. Privacy Policy</h2>
-          <p>
-            Your privacy is important to us. Our
-            <a href="/privacy.html">Privacy Policy</a> explains how we collect,
-            use, and protect your personal data.
-          </p>
-        </section>
+            <h2 class="title-section mt-5 mb-4">2. Platform Integrity</h2>
+            <p class="text-secondary mb-4">
+                Users are prohibited from reverse-engineering the UI/UX components, attempting to disrupt the continuous aesthetic streams, or using automated scraping protocols on our high-definition galleries.
+            </p>
 
-        <section id="acceptable-use">
-          <h2>4. Acceptable Use Policy</h2>
-          <p>
-            We expect users to use our services responsibly and respectfully.
-            Prohibited activities include:
-          </p>
-          <ol>
-            <li>Uploading harmful, illegal, or malicious content.</li>
-            <li>Engaging in harassment or abusive behavior.</li>
-            <li>
-              Violating any applicable local, national, or international laws.
-            </li>
-          </ol>
-        </section>
+            <h2 class="title-section mt-5 mb-4">3. Curation Standards</h2>
+            <p class="text-secondary mb-4">
+                Any media submitted by our curators must meet the subjective high-fidelity standards of the Archive Platform. Overly compressed, artifact-heavy, or misaligned media will not pass the quality gateway.
+            </p>
 
-        <section id="account-termination">
-          <h2>5. Account Termination</h2>
-          <p>
-            We reserve the right to suspend or terminate your account if you
-            violate these terms or engage in any behavior that may harm our
-            services or other users.
-          </p>
+            <div class="mt-5 pt-5 text-center">
+                <a href="./index.html" class="text-secondary text-decoration-underline" style="font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: none;">Return to Archive</a>
+            </div>
         </section>
-
-        <section id="dispute-resolution">
-          <h2>6. Dispute Resolution</h2>
-          <p>
-            Any disputes arising under these Terms will be resolved through
-            arbitration in accordance with applicable laws.
-          </p>
-        </section>
-
-        <section id="modifications">
-          <h2>7. Modifications to the Terms</h2>
-          <p>
-            We may update these Terms of Service from time to time. It is your
-            responsibility to review them periodically. Continued use of our
-            services indicates acceptance of the revised terms.
-          </p>
-        </section>
-
-        <section id="contact">
-          <h2>8. Contact Information</h2>
-          <p>
-            If you have any questions about these Terms, please contact us at
-            <a href="mailto:keshav40353@gmail.com">Pixora@gmail.com</a>.
-          </p>
-        </section>
-      </div>
     </main>
 
-    <footer class="tos-footer">
-      <div class="container">
-        <p>
-          &copy; 2024 Pixora. All rights reserved. | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a> | <a href="./index.html">Back  to Home</a>
-
-        </p>
-      </div>
+    <footer class="minimal-footer reveal">
+        <div class="footer-links">
+            <a href="./terms.html" class="active">Terms of Service</a>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="mailto:keshav40353@gmail.com">Contact Us</a>
+            <a href="./about.html">About Us</a>
+        </div>
+        <p>&copy; 2024 Pixora Archive. Designed for visual excellence.</p>
     </footer>
-  </body>
+
+    <script src="./js/main.js"></script>
+</body>
 </html>
